@@ -17,7 +17,8 @@ def main():
 
     print("Players from FIN:\n")
 
-    for player in players:
+    players_sorted_by_points = sorted(players, key=lambda player: player.points, reverse=True)
+    for player in players_sorted_by_points:
         print(player)
 
 if __name__ == "__main__":
