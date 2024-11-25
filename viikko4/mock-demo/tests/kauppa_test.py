@@ -31,7 +31,7 @@ class TestKauppa(unittest.TestCase):
         kauppa.aloita_ostokset()
         kauppa.lisaa_ostos(5)
         kauppa.lisaa_ostos(5)
-        kauppa.maksa("1111")
+        kauppa.maksa("1112")
 
         # katsotaan, että ensimmäisen parametrin arvo on oikea
         pankki_mock.maksa.assert_called_with("1111", ANY, ANY)
